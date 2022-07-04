@@ -1,0 +1,30 @@
+@media only screen and (min-width: 280px) {
+    .cart-badge {
+        display: block;
+        width: 27px;
+        height: 27px;
+        font-size: 1rem;
+        text-align: center;
+        color: white;
+        border-radius: 50%;
+        background: #df4759;
+    }
+
+    #tamañoSvg {
+        width: 40px;
+    }
+
+    #cantidadProductos {
+        margin-left: 9px;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    #tamañoSvg {
+        width: 50px;
+    }
+
+    #cantidadProductos {
+        margin-left: 13px;
+    }
+}
