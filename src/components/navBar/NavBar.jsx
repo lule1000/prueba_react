@@ -1,4 +1,4 @@
-import './navBar.css';
+import './navBar.scss';
 import CartWidget from './Cart';
 import CategoriesItems from './Categories';
 
@@ -6,7 +6,7 @@ const NavBar = () => {
     return (
         <>
             <header>
-                <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+                <nav className="navbar navbar-expand-lg d-flex flex-lg-nowrap navbar-dark bg-dark">
                     <div className="container-fluid">
                         <a className="navbar-brand" href="..../public/index.html">Money Converters</a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,12 +25,12 @@ const NavBar = () => {
                                         Categories
                                     </a>
                                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <CategoriesItems greeting={'Older'}/>
-                                        <CategoriesItems greeting={'BC'}/>
-                                        <CategoriesItems greeting={'Century XV'}/>
-                                        <CategoriesItems greeting={'Century XVI'}/>
-                                        <CategoriesItems greeting={'Century XVII'}/>
-                                        <CategoriesItems greeting={'Century XVIII'}/>
+                                        <CategoriesItems greeting={'Older'} />
+                                        <CategoriesItems greeting={'BC'} />
+                                        <CategoriesItems greeting={'Century XV'} />
+                                        <CategoriesItems greeting={'Century XVI'} />
+                                        <CategoriesItems greeting={'Century XVII'} />
+                                        <CategoriesItems greeting={'Century XVIII'} />
                                     </ul>
                                 </li>
                                 <li className="nav-item">
@@ -43,8 +43,10 @@ const NavBar = () => {
                             </form>
                         </div>
                     </div>
+                    <div>
+                        <CartWidget />
+                    </div>
                 </nav>
-                <CartWidget/>
             </header>
         </>
     );
