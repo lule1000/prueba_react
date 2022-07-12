@@ -1,28 +1,18 @@
 nav {
     background-color: #66ff66;
     box-shadow: 1px 1px 1px black;
-    .navTitle {
-        font-family: 'Limelight', cursive;
-    }
-    .a_img {
-        width: 5%;
-        .logo {
-            width: 100%;
-        }
-    }
 }
+
 @media only screen and (min-width: 280px) {
     nav {
-        .navTitle {
-            font-size: 0.8rem;
-        }
         .a_img {
-            width: 14%;
+            width: 50%;
             .logo {
                 width: 100%;
             }
         }
     }
+
     .cart-badge {
         display: block;
         width: 27px;
@@ -45,11 +35,8 @@ nav {
 
 @media only screen and (min-width: 400px) {
     nav {
-        .navTitle {
-            font-size: 1.2rem;
-        }
         .a_img {
-            width: 16%;
+            width: 30%;
             .logo {
                 width: 100%;
             }
@@ -59,16 +46,15 @@ nav {
 
 @media only screen and (min-width: 700px) {
     nav {
-        .navTitle {
-            font-size: 2rem;
-        }
         .a_img {
-            width: 7%;
+            width: 15%;
+
             .logo {
                 width: 100%;
             }
         }
     }
+
     #tamañoSvg {
         width: 50px;
     }

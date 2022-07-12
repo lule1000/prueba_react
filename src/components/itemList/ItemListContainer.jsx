@@ -1,37 +1,37 @@
 import { useState, useEffect } from 'react';
+import ItemList from './ItemList';
+import dataProducts from './dataProducts';
+import Spinner from '../spinnerLoading/Spinner';
 import './itemListContainer.scss';
-import termoStanley from './images/termoStanley (1).webp'
 
-const ItemListContainer = ({ stock }) => {
-    const [count, setCount] = useState(1);
+const ItemListContainer = () => {
+    let [dataItems, setItems] = useState ([]);
+    let [loading, setLoading] = useState (true);
 
-    useEffect(() => {
-        console.log('Componente montado')
-    }, [count])
+    useEffect (() => {
+        const promiseData = new Promise ((resolve, reject) => {
+            setTimeout (() => {
+                resolve (dataProducts)
+            }, 2000);
+            setTimeout (() => {
+                reject ('Hubo un error')
+            }, 2000);
+        });
+        promiseData.then ((res) => {
+            setItems (dataProducts);
+        })
+        .catch ((error) => {
+            console.log (error);
+        })
+        .finally (() => {
+            setLoading (false)
+        })
+    }, []);
 
-    const cantidadProducto = (cantidad) => {
-        if (cantidad === "-" && count > 1) {
-            setCount(count - 1)
-        } else if (cantidad === "+" && count < 6) {
-            setCount(count + 1)
-        }
-    }
-
+    if (loading) return <Spinner />;
     return (
-        <main className='m-2'>
-            <div className="card">
-                <img src={termoStanley} className="card-img-top" alt="Moneda Romana" />
-                <div className="card-body">
-                    <h5 className="card-title">
-                        Stanley term</h5>
-                    <p className="card-text">Stanley thermos keep the temperature for 12 hours.</p>
-                    <p>{stock}</p>
-                    <a href="#" className="me-1 btn btn-dark">Add to cart</a>
-                    <button onClick={() => cantidadProducto("-")}>-</button>
-                    {count}
-                    <button onClick={() => cantidadProducto("+")}>+</button>
-                </div>
-            </div>
+        <main className='m-2 d-flex flex-direction-row'>
+            <ItemList items={dataItems} />
         </main>
     );
 }

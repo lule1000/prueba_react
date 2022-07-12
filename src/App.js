@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <NavBar />
-      <ItemListContainer stock={'Stock (6 disponibles)'} />
+      <ItemListContainer />
     </>
   );
 }
