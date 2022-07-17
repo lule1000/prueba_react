@@ -1,9 +1,9 @@
 import './navBar.scss';
 import CartWidget from './Cart';
-import CategoriesItems from './Categories';
+import { LinkA } from './linkNav';
 const imgLogo = {
-    alt : 'Imagen Logo',
-    imgUrl : '/imagesNav/simboloArbol.svg'
+    alt: 'Imagen Logo',
+    imgUrl: '/imagesNav/simboloArbol.svg'
 }
 
 const NavBar = () => {
@@ -19,24 +19,24 @@ const NavBar = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">Home</a>
+                            <LinkA className="nav-link active" aria-current="page" href="#">Home</LinkA>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active" href="#">Featured</a>
+                            <LinkA className="nav-link active" href="#">Featured</LinkA>
                         </li>
                         <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <LinkA className="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Categories
-                            </a>
+                            </LinkA>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <CategoriesItems greeting={'Camping'} />
-                                <CategoriesItems greeting={'Hunt'} />
-                                <CategoriesItems greeting={'Fishing'} />
-                                <CategoriesItems greeting={'lanterns'} />
+                                <li><a className="dropdown-item" href="#">Camping</a></li>
+                                <li><a className="dropdown-item" href="#">Hunt</a></li>
+                                <li><a className="dropdown-item" href="#">Fishing</a></li>
+                                <li><a className="dropdown-item" href="#">Lanterns</a></li>
                             </ul>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link">About Us</a>
+                            <LinkA className="nav-link active">About Us</LinkA>
                         </li>
                     </ul>
                     <form className="d-flex mb-2 mb-lg-0">

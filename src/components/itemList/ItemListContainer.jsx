@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import ItemList from './ItemList';
-import dataProducts from './dataProducts';
+import dataProducts from '../../dataProducts';
 import Spinner from '../spinnerLoading/Spinner';
 import './itemListContainer.scss';
 
@@ -30,7 +30,7 @@ const ItemListContainer = () => {
 
     if (loading) return <Spinner />;
     return (
-        <main className='m-2 d-flex flex-direction-row'>
+        <main className='m-2 d-flex flex-direction-row justify-content-center'>
             <ItemList items={dataItems} />
         </main>
     );
