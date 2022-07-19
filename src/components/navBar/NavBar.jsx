@@ -1,5 +1,7 @@
 import './navBar.scss';
 import CartWidget from './Cart';
+import { Link } from 'react-router-dom';
+import Spinner from '../spinnerLoading/Spinner';
 import { LinkA } from './linkNav';
 const imgLogo = {
     alt: 'Imagen Logo',
@@ -10,9 +12,9 @@ const NavBar = () => {
     return (
         <nav className="sticky-top navbar navbar-expand-md d-flex flex-nowrap navbar-light">
             <div className="container-fluid flex-wrap">
-                <a className="a_img navbar-brand" href="..../public/index.html">
+                <Link to={'/'} className="a_img navbar-brand">
                     <img className='logo' src={imgLogo.imgUrl} alt={imgLogo.alt} />
-                </a>
+                </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -29,10 +31,15 @@ const NavBar = () => {
                                 Categories
                             </LinkA>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a className="dropdown-item" href="#">Camping</a></li>
-                                <li><a className="dropdown-item" href="#">Hunt</a></li>
-                                <li><a className="dropdown-item" href="#">Fishing</a></li>
-                                <li><a className="dropdown-item" href="#">Lanterns</a></li>
+                                <Link to={'/category/temperature'} className="dropdown-item">Temperature</Link>
+                                <Link to={'/category/footwear'} className="dropdown-item"><li>Footwear</li></Link>
+                                <Link to={'/category/sleepingBags'} className="dropdown-item"><li>Sleeping Bags</li></Link>
+                                <Link to={'/category/backpacks'} className="dropdown-item"><li>Backpacks</li></Link>
+                                <Link to={'/category/tents'} className="dropdown-item"><li>Tents</li></Link>
+                                <Link to={'/category/ilumination'} className="dropdown-item"><li>Ilumination</li></Link>
+                                <Link to={'/category/fishing'} className="dropdown-item"><li>Fishing</li></Link>
+                                <Link to={'/category/hunt'} className="dropdown-item"><li>Hunt</li></Link>
+                                <Link to={'/category/clothing'} className="dropdown-item"><li>Clothing</li></Link>
                             </ul>
                         </li>
                         <li className="nav-item">

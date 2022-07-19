@@ -1,4 +1,6 @@
-const Item = ({imgUrl, alt, name, price}) => {
+import { Link } from "react-router-dom";
+
+const Item = ({imgUrl, alt, name, price, id}) => {
     return (
         <div className="card m-2">
             <img src={imgUrl} className="card-img-top border-bottom" alt={alt} />
@@ -6,7 +8,7 @@ const Item = ({imgUrl, alt, name, price}) => {
                 <h5 className="card-title">
                     {name}</h5>
                 <p><b>${price}</b></p>
-                <a href="#" className="rounded-0 btn-outline-dark me-2 btn">View Product</a>
+                <Link to={`item/${id}`} className="rounded-0 btn-outline-dark me-2 btn">View Product</Link>
             </div>
         </div>
     );

@@ -1,0 +1,111 @@
+[
+    {
+        "id": 1,
+        "name": "Stanley term",
+        "stock": 6,
+        "price": 12900,
+        "imgUrl": "/imagesItemContainer/termoStanley (1).webp",
+        "linkUrl": "/stanleyTermDetail",
+        "description": "Stanley thermos keep the temperature for 12 hours.",
+        "category": "temperature"
+    },
+    {
+        "id": 2,
+        "name": "Brogas burner",
+        "stock": 4,
+        "price": 9500,
+        "imgUrl": "/imagesItemContainer/hornallaBrogas (1).jpg",
+        "description": "Brogas burner to heat and cook on your days outdoors.",
+        "category": "kitchen"
+    },
+    {
+        "id": 3,
+        "name": "Black & Decker Electric Conservatory",
+        "stock": 2,
+        "price": 35200,
+        "imgUrl": "/imagesItemContainer/conservadoraBlack&Decker (1).jpg",
+        "description": "Electric Conserver 12v/220v 24 L Black & Decker Bdc24l.",
+        "category": "temperature"
+    },
+    {
+        "id": 4,
+        "name": "Montagne Lantern",
+        "stock": 10,
+        "price": 6750,
+        "imgUrl": "/imagesItemContainer/farolMontagne (1).jpg",
+        "description": "Lantern Works with 3 D batteries (not included), range approximately 10 meters.",
+        "category": "ilumination"
+    },
+    {
+        "id": 5,
+        "name": "Montagne Backpack",
+        "stock": 4,
+        "price": 19750,
+        "imgUrl": "/imagesItemContainer/mochilaMontagne (1).jpg",
+        "description": "Capacity: 60 liters. Removable lumbar adjustment. Adjustable shoulder height. Pectoral and lumbar adjustment straps. Side compression straps. Equipment straps. Includes backpack cover. Back with “Ergofit” system. Anatomical shoulder pads. Cane holder. False bottom. Compatible with hydration system.",
+        "category": "backpacks"
+    },
+    {
+        "id": 6,
+        "name": "Fishing Rod X Fish Model Feeder ideal Pejerrey",
+        "stock": 11,
+        "price": 19750,
+        "imgUrl": "/imagesItemContainer/cañaPescaX (1).webp",
+        "description": "fishing rod for pejerrey fishing.",
+        "category": "fishing"
+    },
+    {
+        "id": 7,
+        "name": "Salomon Trekking Shoes",
+        "stock": 23,
+        "price": 23999,
+        "imgUrl": "/imagesItemContainer/zapatillaTrekkingSalomon (1).jpg",
+        "description": "trekking shoes, keeps the feet comfortable during long walks.",
+        "category": "footwear"
+    },
+    {
+        "id": 8,
+        "name": "Montagne Sleeping Bag - Zaigon Pro",
+        "stock": 9,
+        "price": 18834,
+        "imgUrl": "/imagesItemContainer/bolsaDormirMontagne (1).jpg",
+        "description": "Sleeping bag, temperature range: +10°C /-5°C, attachable, carrying bag included.",
+        "category": "sleepingBags"
+    },
+    {
+        "id": 9,
+        "name": "Ghara 4P Montage Tent",
+        "stock": 2,
+        "price": 18834,
+        "imgUrl": "/imagesItemContainer/carpaMontagne (1).jpg",
+        "description": "heat-sealed seams, side door access, side windows with mosquito net, includes carry bag.",
+        "category": "tents"
+    },
+    {
+        "id" : 10,
+        "name" : "Prana Black Hawk Professional Compound Bow + 3 Arrows",
+        "stock" : 3,
+        "price" : 60500,
+        "imgUrl" : "/imagesItemContainer/arcoPranaBlackHawk (1).jpg",
+        "description" : "Prana brings you the magnificent and powerful Black Hawk, ideal for launching in search of large prey.",
+        "category" : "hunt"
+    },
+    {
+        "id" : 11,
+        "name" : "Jellas knife 8Cr13Mov",
+        "stock" : 7,
+        "price" : 11365,
+        "imgUrl" :"/imagesItemContainer/cuchilloJellas8Cr13Mov (1).jpg",
+        "description" : "Pocket Knife, 440C Folding Knife with Clip, Tactical Knife for Fishing, Hunting, Hiking, Survival, Gift for Men and Women (Red)",
+        "category" : "hunt"
+    },
+    {
+        "id" : 12,
+        "name" : "Men's Jacket Montagne Quantum",
+        "stock" : 12,
+        "price" : 23561,
+        "imgUrl" :"/imagesItemContainer/camperaMontagneQuantum (1).jpg",
+        "description" : "It is a garment with a high thermal range. This garment has a water-repellent treatment, which makes it difficult for the fabric to absorb it, favoring its waterproof and anti-stain properties.",
+        "category" : "clothing"
+    }
+]
