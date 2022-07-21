@@ -24,7 +24,7 @@ const ItemListContainer = () => {
             const products = res;
             console.log(name)
             if (name) {
-                setItems(products.filter(product => product.category == name))
+                setItems(products.filter(product => product.category === name))
             } else {
                 setItems(products)
             }

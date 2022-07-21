@@ -1,5 +1,5 @@
 import './navBar.scss';
-import CartWidget from './Cart';
+import Cart from '../cartWidget/Cart';
 import { Link } from 'react-router-dom';
 import Spinner from '../spinnerLoading/Spinner';
 import { LinkA } from './linkNav';
@@ -52,7 +52,7 @@ const NavBar = () => {
                     </form>
                 </div>
             </div>
-            <CartWidget />
+            <Cart />
         </nav>
     );
 }

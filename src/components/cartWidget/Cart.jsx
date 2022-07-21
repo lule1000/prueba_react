@@ -1,7 +1,7 @@
-const CartWidget = () => {
+const Cart = ({ quantity }) => {
     return (
         <div>
-            <a className="text-decoration-none" href="#">
+            <a className="text-decoration-none" href="/cart">
                 <span id="cantidadProductos" className='cart-badge'>0</span>
             </a>
             <svg id="tamañoSvg" viewBox="0 0 202 167.3">
@@ -14,4 +14,4 @@ const CartWidget = () => {
     );
 }
 
-export default CartWidget;
+export default Cart;

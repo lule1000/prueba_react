@@ -20,7 +20,7 @@ const ItemDetailContainer = () => {
 
     useEffect(() => {
         getItem().then((res) => {
-            const foundItem = res.filter (item => item.id == id)
+            const foundItem = res.filter (item => item.id === parseInt(id))
             setItemDetail (foundItem[0])
         })
             .finally(() => {

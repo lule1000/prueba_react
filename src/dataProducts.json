@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "Stanley term",
+        "name": "Stanley thermos",
         "stock": 6,
         "price": 12900,
         "imgUrl": "/imagesItemContainer/termoStanley (1).webp",
@@ -74,7 +74,7 @@
     },
     {
         "id": 9,
-        "name": "Ghara 4P Montage Tent",
+        "name": "Montage Tent Ghara 4P ",
         "stock": 2,
         "price": 18834,
         "imgUrl": "/imagesItemContainer/carpaMontagne (1).jpg",
